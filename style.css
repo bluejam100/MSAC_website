@@ -1,0 +1,370 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/ 
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, img {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block; 
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+ 
+
+/* 
+
+CSS reset code after here Christina!!! 
+
+*/                                         
+
+body{
+    width: 100vw;
+}
+
+.section {
+	color: #ffffff;
+	height: 75vh;
+	margin: 0;
+}
+
+#a { background-color: #0074d9; }
+#b { background-color: #2ecc40; }
+#c { background-color: #ff851b; }
+#d { background-color: #b10dc9; }
+
+/*Header CSS*/
+.fa-fa-bar{
+  display: flex;
+  justify-content: center;
+}
+/*
+.tiny-box
+    width: 80px;
+  display: flex;
+  justify-content: space-between;
+}*/
+
+.menu-toggle{  
+background-color: transparent;
+border: 0;
+width: 110px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+color: #4B4233;
+font-weight: 800; 
+line-height: 1.5;
+margin: 1px auto 2px;
+padding: 1em;
+border-radius: 2px;
+transition: background 0.2; 
+cursor: pointer;
+font-size: 18px
+  
+}
+.menu-toggle:hover{
+  background-color: #7B6C55
+}
+
+
+header{
+  width: 100%;
+}
+nav{
+  height: inherit;
+  width: 100%;
+  height: 10vh;
+}
+
+
+.sticky{
+  background: #fff;
+    border-bottom: 1px solid #eee;
+    border-top: 1px solid #eee;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  height: 10vh;
+  top: 0;
+}
+.sticky a{
+  color: #4B4233;
+  transition: color 0.2s;
+  text-decoration: none;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 130%;
+  font-weight: 600;
+}
+
+nav a:hover{
+color: #7B6C55;  
+}
+.sticky a:active{
+ color: #7B6C55;
+}
+
+
+
+.medium-box{
+    margin-top: 7px; 
+  margin-right: 5vw;
+  margin-left: 5vw;
+  height: 30px;
+}
+
+.list-inline{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  list-style: none;
+  padding: 25px 0px 20px 0px;
+}
+
+/*
+.list-inline > li{
+  display: inline-block;  
+  margin-left: 0.2em; 
+  margin: right; 0.2em;
+}
+
+
+.list-inline > li:before{
+  content: "\200B"; 
+  position: absolute;
+}
+
+*/
+.maid{
+    width: 100vw; 
+    height: 90vh; 
+    object-fit: cover;
+    object-position: 20% 10%;
+    margin-bottom: -3px; 
+}
+
+
+
+html{
+  background-color: white;
+}
+  
+footer{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+hr{
+  height: 1px;
+  width: 80%;
+  padding: 5px 0
+  background-color: black;
+}
+
+.first-box{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.smicons{
+  border-radius: 50%;
+  display: flex;
+  background:  #4B4233;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  margin: 20px 10px 20px 10px;
+}
+
+.discord{
+  width: 45px;
+  height: 45px;
+  padding: 10px;
+  margin: 13px 10px 10px 10px;
+}
+.facebook{
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  margin: 12px 12px 10px 10px;
+}
+.email{
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  margin: 7px 10px 12px 10px;
+}
+
+.newsletter{
+  font-size: 15px;
+}
+a{
+  color:  #4B4233;
+}
+
+.second-box{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px 0px 10px 0px;
+  margin-left: 80px;
+  
+}
+.small-box{
+  width: 160px;
+  height: 30px;
+}
+
+
+
+.third-box{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.made-with-love{
+  color: #4B4233;
+}
+
+p {
+  font-size: 140%;
+}
+
+
+
+/* MEDIA QURRY */
+
+.topnav, .menu-toggle, .icon{
+  display: none; 
+}
+
+
+
+/*media queries*/
+@media screen and (max-width:650px){
+.list-inline, .medium-box, nav {display: none; }  
+
+/* code for the drop down */ 
+
+.list-inline-d, .medium-box-d, .nav-d {
+    display: flex; 
+}  
+
+    
+.stickyd
+{
+    padding-top: 2.312vh; 
+  display: flex  ;
+  flex-direction: column  ;
+  height: inherit  ;
+border-top: 0px; 
+}
+
+
+    
+.list-inline-d{
+    height: inherit;
+    padding: 0px;
+    padding-bottom:10px;
+    text-align: left;
+    display: inline-block;
+  }
+  .medium-box-d{
+    border-bottom: 1px solid #eee;
+  } 
+.nav-d{
+  border-top: 1px solid #eee;
+height: inherit;
+} 
+.stickA-d {
+  font-weight: 530;
+}  
+/* end code for the drop down */ 
+
+    
+.topnav, .menu-toggle, .icon{ display: flex; }
+
+.smicons{
+  border-radius: 50%;
+  display: flex;
+  background:  #4B4233;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  padding: 10px;
+  margin: 20px 10px 20px 10px;
+}
+
+.discord{
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  margin: 13px 10px 10px 10px;
+}
+.facebook{
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  margin: 12px 12px 10px 10px;
+}
+.email{
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  margin: 7px 10px 12px 10px;
+}
+  .made-with-love{
+  font-size: 16px;
+  text-align: center;
+  }
+}
+
+
+
+/*Contact us Page*/
+

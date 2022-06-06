@@ -122,7 +122,7 @@ class MyFooter extends HTMLElement {
       -->
 
 <div class= "third-box">
-   <p class="made-with-love"> Made with 🤎 Christina, advised by Abu, and art by Song </p>
+   <p class="made-with-love"> Made with 🤎 by Christina, advised by Abu, and art by Song </p>
 </div>
     
   </footer>

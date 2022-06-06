@@ -127,6 +127,7 @@ nav{
   position: sticky;
   height: 10vh;
   top: 0;
+  z-index: 999; 
 }
 .sticky a{
   color: #4B4233;
@@ -365,6 +366,130 @@ height: inherit;
 }
 
 
-
 /*Contact us Page*/
 
+main{
+  display: flex;
+  justify-content: center;
+}
+
+.form-container{
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  width: 70%;
+}
+input[type=text], input[type=email], textarea{
+  width: 100%; 
+  padding: 12px;
+  border: 1px solid #ccc; 
+  border-radius: 4px;
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color:#4B4233;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #7B6C55;
+}
+.sform-container{
+  width: 100%;
+  height: 230px;
+  
+}
+.sform-container li{
+  margin: 10px 0px;
+  font-size: 20px;
+}
+.fs17{
+  font-size: 20px;
+}
+.styleh2{
+  font-size: 40px;
+}
+
+/*FAQ*/
+.faq-container{
+  display: block;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  width: 85%;
+}
+
+.faq-container h3{
+  font-size: 22px;
+  font-weight: bold;
+  margin: 40px 0px 5px 0px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.faq-container h4{
+  font-size: 20px;
+  font-weight: bold;
+  margin: ; 0px 0px -10px 0px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.faq-container p{
+  font-size: 20px;
+  line-height: 1.75;
+}
+/*Newsletter*/
+
+.news-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+  width: 100%;
+  align-items: center;
+}
+
+
+  
+.mnews-container{
+display: flex;
+flex-direction: column;
+}
+
+.snews-container{
+  margin: 20px;
+}  
+  
+.snews-container > h4{
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.display_archive{
+  font-size: 20px !important;
+}
+
+
+#mc_embed_signup{
+  width: auto !important; 
+}
+
+
+#mc_embed_signup h2 {
+  font-size: 28px  !important;
+  margin-top: 20px !important; 
+  
+}

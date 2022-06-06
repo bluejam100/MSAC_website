@@ -8,7 +8,7 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
    <link href="style.css" rel="stylesheet" type="text/css">
-    <script type="module" src="script.js"></script>
+    <script type="text/javascript" src="script.js"></script>
   </head>
   
 
@@ -19,19 +19,34 @@
 <main>
   
 <div class="form-container">
-	<form action="#" method="post">
+
+  <div class="sform-container">
+  <h2 class="styleh2">Contact Us</h2>
+    <ul>
+  <li>This contact page serves two purposes:</li>
+  <li>1. If you wish to ask a question that has not been answered in the <a href="faq.html">FAQ section</a>.</li>
+    
+  <li>2.If you have feedback, information or complaints you would like to bring up to the members of the Executive or Moderation team.</li>
+    
+<li>Please leave your e-mail or discord name if you would like the execs/mods to follow up with you.</li>
+</div>      
   
-        <label for="id_email">Email:</label><input type="email" name="email" maxlength="254" required="" id="id_email">
-<label for="id_subject">Subject:</label><input type="text" name="subject" maxlength="255" required="" id="id_subject">
-<label for="id_message">Message:</label><textarea name="message" cols="40" rows="10" required="" id="id_message"></textarea>
+	<form action="#" method="post">
+        <label for="id_email" class="fs17">Email:</label>
+        <input type="email" name="email" id="id_email" placeholder="your@email.com">
+    
+        <label for="id_discordname" class="fs17">Discord Username:</label> 
+        <input type ="text" name="discordname" id="id_discordname" placeholder="username#0000">
+    
+        <label for="id_subject" class="fs17">Subject:</label>
+        <input type="text" name="subject" maxlength="255" required="" id="id_subject">
+    
+        <label for="id_message" class="fs17">Message:</label><textarea name="message" cols="40" rows="10" required="" id="id_message"></textarea>
         <input type="submit" value="Submit">
 
        </form>
-<div>
+</div>
   
-	<article class="section" id="b"><h2>Section B</h2></article>
-	<article class="section" id="c"><h2>Section C</h2></article>
-	<article class="section" id="d"><h2>Section D</h2>
 </main>
 
     

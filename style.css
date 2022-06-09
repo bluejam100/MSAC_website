@@ -65,11 +65,6 @@ body{
 	margin: 0;
 }
 
-#a { background-color: #0074d9; }
-#b { background-color: #2ecc40; }
-#c { background-color: #ff851b; }
-#d { background-color: #b10dc9; }
-
 /*Header CSS*/
 .fa-fa-bar{
   display: flex;
@@ -160,7 +155,7 @@ color: #7B6C55;
   align-items: center;
   width: 100vw;
   list-style: none;
-  padding: 25px 0px 20px 0px;
+  padding: 25px 0px 25px 0px;
 }
 
 /*
@@ -366,6 +361,10 @@ height: inherit;
 }
 
 
+
+
+
+
 /*Contact us Page*/
 
 main{
@@ -374,7 +373,8 @@ main{
 }
 
 .form-container{
-  background-color: #f2f2f2;
+  background-color: f2f2f2;
+  font-size: 40px;
   padding: 20px;
   margin: 10px;
   border-radius: 10px;
@@ -404,7 +404,6 @@ input[type=submit]:hover {
 }
 .sform-container{
   width: 100%;
-  height: 230px;
   
 }
 .sform-container li{
@@ -431,7 +430,7 @@ input[type=submit]:hover {
 .faq-container h3{
   font-size: 22px;
   font-weight: bold;
-  margin: 40px 0px 5px 0px;
+  margin: 40px 0px 15px 0px;
   height: 30px;
   display: flex;
   align-items: center;
@@ -497,12 +496,12 @@ flex-direction: column;
 .artheader{
   font-size: 40px;
   padding-top: 20px;
-  padding-left: 230px;
+  padding-left: 23vw;
   
 }
 .artheader4{
   padding-top: 20px;
-  padding-left: 230px;
+  padding-left: 23vw;
   font-size: 18px;
   font-style: italic;
 }
@@ -530,21 +529,99 @@ justify-content: center;
 }
 
 .img-responsive{
- max-width: 500px;
-padding:8px ;
+ max-width: 90vw;
+/*padding: 1vw;*/
     margin-left: auto !important;
     margin-right: auto !important;
     
 }
 
-.gallery-item {
-  max-width: 500px;
+.gallery-item {  
     margin-left: auto !important;
     margin-right: auto !important;
     
 } 
 
+/*Home Page*/
+
+/* Container holding the image and the text */
+.hp-container{
+  display: block;
+  width: min(90%, 80.5rem);
+  margin-inline: auto;
+}
+
+.hph1{
+  font-size: 7vw;
+  padding: 60px;
+  display: flex;
+  text-align: center;
+  color:  #4B4233;
+}
+
+.hph2 {
+  padding-left: 6.5vw;
+  margin-left: 6vw;
+  margin-right: 7vw;
+  padding-top: 6vw;
+  padding-bottom: 3vw;
+  font-size: 5.5vw;
+  color:  #4B4233;
+}
+.hppstyle{
+  padding-left: 7.5vw;
+  padding-right: 6.5vw;
+  margin-left: 5.5vw;
+  margin-right: 5.5vw;
+  margin-bottom: 5vw;
+  line-height: 1.3;
+  font-size: 3.5vw;
+  color:  #4B4233;
+}
+
+.hpimg-container {
+  position: relative;
+  text-align: center;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*font-size: 3.75rem;*/
+  font-size: 5.5vw;
+  color:  #4B4233;
+}
+
+.bgstyle {
+   max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
 
 
- 
+
+
+
+
+
+@media screen and (min-width:800px){
+.img-responsive{
+width: 300px; 
+    padding: 5px; 
+}
+
+.hppstyle{
+
+font-size:40px; 
+    
+}
+
+.hph1 {
+    font-size:70px 
+}
+
+}
 

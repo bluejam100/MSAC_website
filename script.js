@@ -46,9 +46,6 @@ for (var i = 0; i < x.length; i++) {
 }
 
 
-
-
-
 //Header//
 
 class MyHeader extends HTMLElement {
@@ -99,14 +96,22 @@ class MyFooter extends HTMLElement {
   <footer>
  
     <div class="first-box">
-    <div class="smicons"><img class="discord" src="Discord_logo.png" alt="discord logo"> 
-    </div>
-    
-    <div class="smicons"><img class="facebook" src="facebook_logo_3.png" alt="facebook logo">
+    <div class="smicons">
+<a href="https://discord.gg/gSAz2GC" target="_blank">
+<img class="discord" src="Discord_logo.png" alt="discord logo"> 
+</a>
     </div>
 
     <div class="smicons">
+<a href="https://www.facebook.com/McGillAnime/" target="_blank">
+<img class="facebook" src="facebook_logo_3.png" alt="facebook logo">
+</a>
+    </div>
+
+    <div class="smicons">
+<a href="contact.html">
       <img class="email" src="email_logo.png" alt="email logo">
+</a>
     </div>
 
     </div>

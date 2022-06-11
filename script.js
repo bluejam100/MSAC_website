@@ -1,3 +1,49 @@
+async function sendContact(ev){
+    ev.preventDefault();
+        const senderEmail = document
+          .getElementById('id_email').value || "Anon" ;
+        const subject_line =  document 
+          .getElementById('id_subject').value  || "Anon" ;
+        const discord_id = document
+          .getElementById('id_discordname').value || "Anon" ;
+        const senderMessage = document 
+          .getElementById('id_message').value;
+
+        
+
+    
+    
+        const webhookBody = {
+          embeds: [{
+            title: 'Contact Form Submitted',
+            fields: [
+              {  name: 'Discord', value: discord_id },
+              { name: 'Sender', value: senderEmail },
+              {name: 'subject',value: subject_line },
+              { name: 'Message', value: senderMessage }
+            ]
+          }],
+        };
+
+        const webhookUrl = 'https://discord.com/api/webhooks/984307685447041085/WqPPEVhAAwykcFxnvG3sYlhY_sAPll2C7xWklvQsUFwp6NTx8Hkg6hqO4VR8NnFx_JTL';
+
+        const response = await fetch(webhookUrl, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(webhookBody),
+        });
+
+        if (response.ok) {
+          alert('I have received your message!');
+        } else {
+          alert('There was an error! Try again later!');
+        }
+}
+
+
+
 function myFunction() {
   var x = document.getElementById("nav");
   if (x.className === "") {
@@ -66,15 +112,14 @@ class MyHeader extends HTMLElement {
 </button>
    
     </div>
-  
     
   <nav id="nav">
     <ul id="list-inline" class="list-inline"> 
-      <li class="medium-box"><a class="stickA" href="index.html">Home Page</a></li>
-      <li class="medium-box"><a class="stickA" href="art.html">Art</a></li>
-      <li class="medium-box"><a class="stickA" href="newsletter.html">Newsletters</a></li>
-      <li class="medium-box"><a class="stickA" href="contact.html">Contact Us</a></li>
-      <li class="medium-box"><a class="stickA" href="faq.html">FAQ</a></li>
+      <li class="medium-box"><a class="stickA" href="index.html#sticky">Home Page</a></li>
+      <li class="medium-box"><a class="stickA" href="art.html#sticky">Art</a></li>
+      <li class="medium-box"><a class="stickA" href="newsletter.html#sticky">Newsletters</a></li>
+      <li class="medium-box"><a class="stickA" href="contact.html#sticky">Contact Us</a></li>
+      <li class="medium-box"><a class="stickA" href="faq.html#sticky">FAQ</a></li>
     </ul>
   </nav>
     
@@ -127,7 +172,8 @@ class MyFooter extends HTMLElement {
       -->
 
 <div class= "third-box">
-   <p class="made-with-love"> Made with 🤎 by Christina, advised by Abu, and art by Song </p>
+   <p class="made-with-love"> Made with 🤎 by Christina, advised by Abu, and art by Song. <a href="https://github.com/bluejam100/MSAC_website
+"> GitHub Repo</a>  </p>
 </div>
     
   </footer>
@@ -136,5 +182,7 @@ class MyFooter extends HTMLElement {
 }
 
 customElements.define('my-footer',MyFooter)
+
+
 
 

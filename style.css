@@ -285,7 +285,11 @@ p {
 .list-inline, .medium-box, nav {display: none; }  
 
 /* code for the drop down */ 
+.maid{
+    height: 70vh;
+}
 
+    
 .list-inline-d, .medium-box-d, .nav-d {
     display: flex; 
 }  
@@ -623,5 +627,10 @@ font-size:40px;
     font-size:70px 
 }
 
+.centered{
+
+    font-size: 50px; 
+}
+    
 }
 

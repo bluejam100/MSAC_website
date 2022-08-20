@@ -3,6 +3,9 @@
    v2.0 | 20110126
    License: none (public domain)
 */ 
+html {
+  overflow-x: hidden;
+}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -195,7 +198,7 @@ footer{
 hr{
   height: 1px;
   width: 80%;
-  padding: 5px 0
+  padding: 5px 0;
   background-color: black;
 }
 
@@ -443,7 +446,7 @@ input[type=submit]:hover {
 .faq-container h4{
   font-size: 20px;
   font-weight: bold;
-  margin: ; 0px 0px -10px 0px;
+  margin: 0px 0px -10px 0px;
   height: 30px;
   display: flex;
   align-items: center;
